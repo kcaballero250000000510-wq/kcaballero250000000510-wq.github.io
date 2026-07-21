@@ -36,7 +36,7 @@ nav a {
 
 nav a:hover {
   color: white;
-  background-color: #05A8AA;
+  background-color: #e657aa;
   padding: 5px;
 }
 
@@ -45,7 +45,7 @@ nav a:hover {
   height: 500px;
   margin: 10px auto;
   width: 100%;
-/*   overflow: scroll; */
+
 }
 
 
@@ -57,7 +57,7 @@ nav a:hover {
 }
 
 .header h1 {
-  background-color: #05A8AA;
+  background-color: #e657aa;
   color: #FFF;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
@@ -68,7 +68,7 @@ nav a:hover {
   width: 68%;
 }
 
-/* Content Body */
+
 
 .content .body {
   margin: 0 auto;
@@ -85,9 +85,9 @@ nav a:hover {
 
 
 .button {
-  border: 1px solid #05A8AA;
+  border: 1px solid #e657aa;
   border-radius: 4px;
-  color: #05A8AA;
+  color: #e657aa;
   display: block;
   font-weight: 700;
   margin: 40px auto;
@@ -96,8 +96,8 @@ nav a:hover {
 }
 
 .button:hover {
-  background-color: #05A8AA;
-  border: 1px solid #05A8AA;
+  background-color: #e657aa;
+  border: 1px solid #e657aa;
   color: #FFF;
 }
 
@@ -108,7 +108,7 @@ ul.nutrition {
 
 ul.nutrition li {
   display: inline-block;
-  background-color: #05A8AA;
+  background-color: #e657aa;
   list-style: none;
   margin-bottom: 3px;
   padding: 10px 20px;

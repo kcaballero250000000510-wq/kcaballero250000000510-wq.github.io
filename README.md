@@ -18,8 +18,10 @@ and applying foundational text and media tags to build a basic webpage from scra
 
 ### CSS ###
 ***** Davie Jr's Burger *****
-- After learning in HTML we moved to CSS, I learned about CSS Flex and CSS Grid where we align text or control the position of the HTML's element.
+- After learning in HTML we moved to CSS, I learned about CSS Flex and CSS Grid,
+where we align text or control the position of the HTML's element.
 This also includes of how the website design works. -
 
 ### PORTFOLIO ### 
-- This is where I apply everything I learned from the foundation, where it represent my personal layout, skills, and style -
+- This is where I apply everything I learned from the foundation,
+where it represent my personal layout, skills, and style -

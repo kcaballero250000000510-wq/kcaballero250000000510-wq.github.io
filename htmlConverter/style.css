@@ -1,0 +1,25 @@
+body {
+    background-image: url(Images/dark-bg.png);
+    background-repeat: repeat;
+    background-color: hsl(0, 0%, 12%);
+    margin: 0;
+    padding-top: 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+}
+
+#welcome-head {
+    text-align: center;
+    background-color: black;
+    margin: 0; 
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Cinzel', serif;
+}

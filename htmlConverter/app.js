@@ -6,14 +6,15 @@ const htmlPreview = document.getElementById('html-preview');
 
 // Function
 function parseMarkdown(markdown){
+    let html = markdown;
 
     // Headers
-    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
-    html = html.replace(/^## (.*$)/gim, '<h1>$1</h1>');
-    html = html.replace(/^### (.*$)/gim, '<h1>$1</h1>');
-    html = html.replace(/^#### (.*$)/gim, '<h1>$1</h1>');
-    html = html.replace(/^#####(.*$)/gim, '<h1>$1</h1>');
     html = html.replace(/^###### (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^#####(.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^#### (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^### (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^## (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
 
     // Bold
     html = html.replace(/\*\*(.*$)/gim, '<strong>$1</strong>');
@@ -34,7 +35,7 @@ function parseMarkdown(markdown){
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
-    const inputText = markdownInput.ariaValueMax;
+    const inputText = markdownInput.value;
     const convertedHTML = parseMarkdown(inputText);
 
     rawOutput.value = convertedHTML;

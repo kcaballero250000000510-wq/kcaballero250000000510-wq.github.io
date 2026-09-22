@@ -7,6 +7,14 @@ const htmlPreview = document.getElementById('html-preview');
 // Function
 function parseMarkdown(markdown){
 
+    // Headers
+    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^## (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^### (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^#### (.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^#####(.*$)/gim, '<h1>$1</h1>');
+    html = html.replace(/^###### (.*$)/gim, '<h1>$1</h1>');
+
 }
 
 // Event listeners

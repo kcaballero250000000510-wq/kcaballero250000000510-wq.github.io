@@ -41,11 +41,27 @@ body {
     gap: 30px;
 }
 
-#output-container{
-    #raw-label, #html-view-label{
+#raw-output{
+    #raw-label{
         color: white;
     }
     
+    background-color: rgba(0, 0, 0, 0.8); 
+    max-width: 1200px; 
+    width: calc(100% - 40px);
+    margin: 20px auto 15px auto; 
+    padding: 30px; 
+    border-radius: 12px; 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#html-output{
+    #html-view-label{
+        color: white;
+    }
     background-color: rgba(0, 0, 0, 0.8); 
     max-width: 1200px; 
     width: calc(100% - 40px);

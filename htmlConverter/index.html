@@ -1,12 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Conveter</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 id="welcome-head">Markdown to HTML Converter</h1>
-</body>
+
+    <div id="content-container">
+        <label for="markdown-input">Markdown Input</label>
+        <input type="text" placeholder="Type markdown (e.g. # Wornderful, *italic*, **bold**, [link](url))">
+        <button type="submit" id="markdown-input" name="markdown-input">Submit</button>
+
+        <div id="output-content">
+            <label>Raw Output HTML</label>
+            <input type="text" placeholder="output placeholder">
+            <label>HTML View</label>
+            <input type="text" placeholder="output placeholder">
+        </div>
+
+    </div>
+  </body>
 </html>

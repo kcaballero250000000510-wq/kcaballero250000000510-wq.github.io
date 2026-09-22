@@ -39,3 +39,46 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2); 
   box-sizing: border-box;
 }
+
+/*Top container*/
+#content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .input-row{
+        display: flex;
+        gap: 15px;
+        width: 10%;
+    }
+
+    .input-row text-area{
+        flex: 1;
+        min-height: 100px;
+        background-color: #1e1e1e;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+        padding: 12px;
+        font-family: monospace;
+        resize: vertical;
+    }
+
+    #submit-btn{
+        padding: 0 25px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        height: 45px; /* Aligns height nicely alongside the input */
+        transition: background-color 0.2s;
+
+        #submit-btn:hover{
+            background-color: #45a049;
+        }
+    }
+}
+
+/*Bottom Container*/

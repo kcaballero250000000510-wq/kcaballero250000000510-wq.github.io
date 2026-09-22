@@ -57,7 +57,7 @@ body {
 
   textarea {
     width: 100%;
-    min-height: 100px;
+    min-height: 300px;
     background-color: #1e1e1e;
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.3);

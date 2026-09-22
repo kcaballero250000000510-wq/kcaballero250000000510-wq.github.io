@@ -2,15 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Markdown to HTML Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <h1 id="welcome-head">Markdown to HTML Converter</h1>
 
-    <!-- Top Container Card -->
+    <!--Top container-->
     <div id="content-container" class="card">
       <label for="markdown-input" id="markdown-label">Markdown Input</label>
       <textarea
@@ -20,19 +20,19 @@
       <button type="submit" id="submit-btn">Submit</button>
     </div>
 
-    <!-- Bottom Layout Row (2 side-by-side Cards) -->
+    <!--Bottom container-->
     <div id="output-container">
       
-      <!-- Left Output Card -->
+      <!--Left output-->
       <div class="output-card card">
         <label id="raw-label" for="raw-output">Raw Output HTML</label>
         <textarea id="raw-output" placeholder="Raw HTML Output..." readonly></textarea>
       </div>
 
-      <!-- Right Output Card -->
+      <!--right output-->
       <div class="output-card card">
         <label id="html-view-label">HTML View</label>
-        <div id="html-preview">Rendered HTML preview will appear here...</div>
+        <div id="html-preview">HTML preview will appear here...</div>
       </div>
 
     </div>

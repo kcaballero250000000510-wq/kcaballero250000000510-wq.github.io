@@ -1,5 +1,5 @@
 body {
-    background-image: url(Images/dark-bg.png);
+    background-image: url('dark-bg.png');
     background-repeat: repeat;
     background-color: hsl(0, 0%, 12%);
     margin: 0;

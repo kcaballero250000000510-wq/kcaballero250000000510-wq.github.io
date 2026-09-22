@@ -1,46 +1,40 @@
 <!doctype html>
-
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Conveter</title>
+    <title>HTML Converter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!--Top Container-->
   <body>
     <h1 id="welcome-head">Markdown to HTML Converter</h1>
 
-    <div id="content-container">
+    <!-- Top Container Card -->
+    <div id="content-container" class="card">
       <label for="markdown-input" id="markdown-label">Markdown Input</label>
-      <div class="input-row">
-        <textarea
-          id="markdown-input"
-          placeholder="Type markdown (e.g. # Wornderful, *italic*, **bold**, [link](url))"
-        ></textarea>
-        <button type="submit" id="submit-btn">Submit</button>
-      </div>
+      <textarea
+        id="markdown-input"
+        placeholder="Type markdown (e.g. # Wonderful, *italic*, **bold**, [link](url))"
+      ></textarea>
+      <button type="submit" id="submit-btn">Submit</button>
     </div>
 
-    <!--Output Container-->
+    <!-- Bottom Layout Row (2 side-by-side Cards) -->
     <div id="output-container">
-
-        <!--Left Output-->
-      <div id="output-col">
+      
+      <!-- Left Output Card -->
+      <div class="output-card card">
         <label id="raw-label" for="raw-output">Raw Output HTML</label>
-        <textarea id="raw-output" placeholder="Raw HTML Output...">Raw Output HTML</textarea>
+        <textarea id="raw-output" placeholder="Raw HTML Output..." readonly></textarea>
       </div>
 
-        <!--Right Output-->
-      <div id="output-col">
-        <label id="html-view-label" for="html-preview">HTML View</label>
-        <textarea id="html-preview" placeholder="HTML Preview Output...">HTML Preview</textarea>
+      <!-- Right Output Card -->
+      <div class="output-card card">
+        <label id="html-view-label">HTML View</label>
+        <div id="html-preview">Rendered HTML preview will appear here...</div>
       </div>
 
     </div>
-
   </body>
-
 </html>

@@ -1,84 +1,128 @@
 /*Background*/
 body {
-    background-image: url('dark-bg.png');
-    background-repeat: repeat;
-    background-color: hsl(0, 0%, 12%);
-    margin: 0;
-    padding-top: 80px;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, sans-serif;
-    font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  background-image: url('dark-bg.png');
+  background-repeat: repeat;
+  background-color: hsl(0, 0%, 12%);
+  margin: 0;
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
 }
 
 /*Header*/
 #welcome-head {
-    text-align: center;
-    background-color: black;
-    color: white;
-    margin: 0; 
-    padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    font-family: 'Cinzel', serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0; 
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: 'Cinzel', serif;
 }
 
-/*Main style for containers*/
-#content-container,
-#outputs-container {
+/*Main Container Style*/
+.card {
   background-color: rgba(0, 0, 0, 0.8); 
-  max-width: 1200px; 
-  width: calc(100% - 40px);
-  margin: 20px auto 15px auto; 
-  padding: 30px; 
-  border-radius: 12px; 
   border: 1px solid rgba(255, 255, 255, 0.2); 
+  border-radius: 12px; 
+  padding: 25px; 
   box-sizing: border-box;
 }
 
 /*Top container*/
-#content-container{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+#content-container {
+  max-width: 1200px; 
+  width: calc(100% - 40px);
+  margin: 20px auto 15px auto; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 
-    .input-row{
-        display: flex;
-        gap: 15px;
-        width: 10%;
+  #markdown-label {
+    color: white;
+    font-weight: bold;
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 120px;
+    background-color: #1e1e1e;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    padding: 12px;
+    font-family: monospace;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+
+  #submit-btn {
+    align-self: flex-end; 
+    padding: 12px 30px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #45a049;
     }
-
-    .input-row text-area{
-        flex: 1;
-        min-height: 100px;
-        background-color: #1e1e1e;
-        color: white;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        border-radius: 6px;
-        padding: 12px;
-        font-family: monospace;
-        resize: vertical;
-    }
-
-    #submit-btn{
-        padding: 0 25px;
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        font-weight: bold;
-        cursor: pointer;
-        height: 45px; /* Aligns height nicely alongside the input */
-        transition: background-color 0.2s;
-
-        #submit-btn:hover{
-            background-color: #45a049;
-        }
-    }
+  }
 }
 
-/*Bottom Container*/
+/*Bottom container*/
+#output-container {
+  max-width: 1200px; 
+  width: calc(100% - 40px);
+  margin: 0 auto 30px auto; 
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+  /*Left and right style*/
+  .output-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    label {
+      color: white;
+      font-weight: bold;
+    }
+
+    #raw-output {
+      width: 100%;
+      min-height: 250px;
+      background-color: #1e1e1e;
+      color: #00ff66;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 6px;
+      padding: 12px;
+      box-sizing: border-box;
+      font-family: monospace;
+      resize: vertical;
+    }
+
+    #html-preview {
+      width: 100%;
+      min-height: 250px;
+      background-color: #ffffff;
+      color: #000000;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 6px;
+      padding: 12px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+  }
+}

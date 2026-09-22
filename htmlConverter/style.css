@@ -1,3 +1,4 @@
+/*Background*/
 body {
     background-image: url('dark-bg.png');
     background-repeat: repeat;
@@ -11,6 +12,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
 }
 
+/*Header*/
 #welcome-head {
     text-align: center;
     background-color: black;
@@ -25,51 +27,15 @@ body {
     font-family: 'Cinzel', serif;
 }
 
-#content-container { 
-    #markdown-label {
-        color: white;
-    }
-    background-color: rgba(0, 0, 0, 0.8); 
-    max-width: 1200px; 
-    width: calc(100% - 40px);
-    margin: 20px auto 15px auto; 
-    padding: 30px; 
-    border-radius: 12px; 
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-#raw-output{
-    #raw-label{
-        color: white;
-    }
-    
-    background-color: rgba(0, 0, 0, 0.8); 
-    max-width: 1200px; 
-    width: calc(100% - 40px);
-    margin: 20px auto 15px auto; 
-    padding: 30px; 
-    border-radius: 12px; 
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-#html-output{
-    #html-view-label{
-        color: white;
-    }
-    background-color: rgba(0, 0, 0, 0.8); 
-    max-width: 1200px; 
-    width: calc(100% - 40px);
-    margin: 20px auto 15px auto; 
-    padding: 30px; 
-    border-radius: 12px; 
-    border: 1px solid rgba(255, 255, 255, 0.2); 
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
+/*Main style for containers*/
+#content-container,
+#outputs-container {
+  background-color: rgba(0, 0, 0, 0.8); 
+  max-width: 1200px; 
+  width: calc(100% - 40px);
+  margin: 20px auto 15px auto; 
+  padding: 30px; 
+  border-radius: 12px; 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
+  box-sizing: border-box;
 }

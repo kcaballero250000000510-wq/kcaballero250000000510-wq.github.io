@@ -26,7 +26,7 @@ function parseMarkdown(markdown){
     html = html.replace(/\[(.*?)\]\((.*?)\)/gim, '<a href="$2" target="_blank">$1</a>')
 
     // Line break
-    html = html.replace(/\n/gim, '<br />')
+    html = html.replace(/\n/gim, '<br>')
 
     return html.trim();
 }

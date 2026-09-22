@@ -1,29 +1,46 @@
 <!doctype html>
+
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Conveter</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
+  <!--Top Container-->
   <body>
     <h1 id="welcome-head">Markdown to HTML Converter</h1>
 
     <div id="content-container">
-        <label for="markdown-input" id="markdown-label">Markdown Input</label>
-        <input type="text" placeholder="Type markdown (e.g. # Wornderful, *italic*, **bold**, [link](url))">
-        <button type="submit" id="markdown-input" name="markdown-input">Submit</button>
+      <label for="markdown-input" id="markdown-label">Markdown Input</label>
+      <div class="input-row">
+        <textarea
+          id="markdown-input"
+          placeholder="Type markdown (e.g. # Wornderful, *italic*, **bold**, [link](url))"
+        ></textarea>
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
     </div>
 
-    <div id="raw-output">
-        <label id="raw-label">Raw Output HTML</label>
-        <input type="text" placeholder="output placeholder">
-    </div>
+    <!--Output Container-->
+    <div id="output-container">
 
-    <div id="html-output">
-        <label id="html-view-label">HTML View</label>
-        <input type="text" placeholder="output placeholder">
+        <!--Left Output-->
+      <div id="output-col">
+        <label id="raw-label" for="raw-output">Raw Output HTML</label>
+        <textarea id="raw-output" placeholder="Raw HTML Output...">Raw Output HTML</textarea>
+      </div>
+
+        <!--Right Output-->
+      <div id="output-col">
+        <label id="html-view-label" for="html-preview">HTML View</label>
+        <textarea id="html-preview" placeholder="HTML Preview Output...">HTML Preview</textarea>
+      </div>
+
     </div>
 
   </body>
+
 </html>

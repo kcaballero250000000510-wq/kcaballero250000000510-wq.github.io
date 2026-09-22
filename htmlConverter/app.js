@@ -26,6 +26,8 @@ function parseMarkdown(markdown){
 
     // Line break
     html = html.replace(/\n/gim, '<br />')
+
+    return html.trim();
 }
 
 // Event listeners

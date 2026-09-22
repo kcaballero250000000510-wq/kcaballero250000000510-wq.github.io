@@ -10,17 +10,17 @@
     <h1 id="welcome-head">Markdown to HTML Converter</h1>
 
     <div id="content-container">
-        <label for="markdown-input">Markdown Input</label>
+        <label for="markdown-input" id="markdown-label">Markdown Input</label>
         <input type="text" placeholder="Type markdown (e.g. # Wornderful, *italic*, **bold**, [link](url))">
         <button type="submit" id="markdown-input" name="markdown-input">Submit</button>
-
-        <div id="output-content">
-            <label>Raw Output HTML</label>
-            <input type="text" placeholder="output placeholder">
-            <label>HTML View</label>
-            <input type="text" placeholder="output placeholder">
-        </div>
-
     </div>
+
+    <div id="output-content">
+        <label id="raw-label">Raw Output HTML</label>
+        <input type="text" placeholder="output placeholder">
+        <label id="html-view-label">HTML View</label>
+        <input type="text" placeholder="output placeholder">
+    </div>
+
   </body>
 </html>

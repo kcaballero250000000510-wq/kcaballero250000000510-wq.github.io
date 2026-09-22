@@ -6,6 +6,7 @@ It documents my progress, hands-on activities, and major projects as I learn the
 - HTML (Fashion and Wine Festival Schedule)
 - CSS (Davie Jr's Burger)
 - Portfolio
+- htmlConverter (Markdown to HTML Converter)
 
 ### HTML ###
 ***** Fashion *****
@@ -21,6 +22,12 @@ and applying foundational text and media tags to build a basic webpage from scra
 - After learning in HTML we moved to CSS, I learned about CSS Flex and CSS Grid,
 where we align text or control the position of the HTML's element.
 This also includes of how the website design works. -
+
+### JAVASCRIPT ###
+***** htmlConverter *****
+- Learning from the basics of JavaScript from FreeCodeCamp, 
+I managed to create Markdown to HTML converter to apply the theories
+and skills that were learned throughout the lessons. - 
 
 ### PORTFOLIO ### 
 - This is where I apply everything I learned from the foundation,
